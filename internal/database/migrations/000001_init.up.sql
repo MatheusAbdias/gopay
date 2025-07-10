@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS payments (
+    id VARCHAR(36) PRIMARY KEY,
+    amount NUMERIC(10, 2) NOT NULL,
+    processor VARCHAR(8) NOT NULL,
+    created_at TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    processed_at TIMESTAMP(3)
+);
